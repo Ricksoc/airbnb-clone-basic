@@ -1,9 +1,10 @@
 import React from "react";
+import Navbar from "./Navbar";
 
 function App() {
   return (
     <div className="card">
-      <h1>Hello, world!</h1>
+      <Navbar />
     </div>
   );
 }

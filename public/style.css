@@ -66,21 +66,19 @@ button {
 .hero {
   height: 451px;
   background-color: #ffffff;
-}
-
-.hero__image__container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .hero__image {
   width: 396px;
   height: 232px;
   margin-top: 26px;
+  align-self: center;
 }
 
-.hero__text__container {
-  margin-top: 32px;
+.hero__text {
+  margin-top: 33px;
   margin-left: 36px;
 }
 
@@ -90,7 +88,7 @@ button {
   margin: 0;
 }
 
-.hero__text {
+.hero__content {
   margin-top: 15px;
   font-size: 1rem;
   font-weight: 400;

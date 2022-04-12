@@ -21,6 +21,10 @@ button {
   font-family: inherit;
 }
 
+p {
+  margin: 0;
+}
+
 #root {
   background-color: #e5e5e5;
   width: 650px;
@@ -30,9 +34,9 @@ button {
 
 .card {
   position: absolute;
-  background-color: lightblue;
   width: 550px;
   height: 853px;
+  background-color: #ffffff;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -41,8 +45,7 @@ button {
 
 .navbar {
   height: 70px;
-  background-color: #ffffff;
-  box-shadow: 0px 3px 7.5px 0px #0000001a;
+  box-shadow: 0 3px 4px -4px #000000;
   border-radius: 9px 9px 0 0;
 }
 
@@ -78,8 +81,8 @@ button {
 }
 
 .hero__text {
-    margin-left: 36px;
-    margin-top: 33px;
+  margin-left: 36px;
+  margin-top: 33px;
 }
 
 .hero__title {
@@ -96,4 +99,60 @@ button {
   font-weight: 400;
   width: 320px;
   line-height: 1.1;
+}
+
+.activity {
+  margin-left: 37px;
+}
+
+.activity__card {
+  font-size: 12px;
+  line-height: 1.1;
+  font-weight: 300;
+  color: #222222;
+  position: relative;
+}
+
+.activity__img {
+  width: 176px;
+  height: 235px;
+  border-radius: 9px;
+}
+
+.activity__status {
+  background-color: #ffffff;
+  font-size: 10.25px;
+  font-weight: 400;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 61px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity__rating {
+  display: flex;
+  align-items: center;
+  margin-top: 9px;
+}
+
+.activity__rating__star {
+  width: 14px;
+  height: 14px;
+  margin-right: 2px;
+}
+
+.activity__rating__grey {
+  color: #918e9b;
+}
+
+.activity__name {
+  margin: 8px 0;
+}
+
+.activity__price__bold {
+  font-weight: 600;
 }

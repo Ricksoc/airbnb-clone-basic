@@ -103,6 +103,10 @@ p {
 
 .activity {
   margin-left: 37px;
+  display: flex;
+  overflow-x:hidden;
+  overflow-y: hidden;
+  gap: 18px
 }
 
 .activity__card {

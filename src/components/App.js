@@ -3,7 +3,6 @@ import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Card from "./Card";
 
-import activityImage from "../images/katie-zaferes.png";
 
 function App() {
   return (
@@ -12,7 +11,7 @@ function App() {
       <Hero />
       <div className="activity">
         <Card
-          activityImage={activityImage}
+          activityImage="katie-zaferes.png"
           rating="5.0"
           reviewCount={6}
           title="Life Lessons with Katie Zaferes"

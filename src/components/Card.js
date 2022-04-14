@@ -2,33 +2,33 @@ import React from "react";
 import { act } from "react-dom/test-utils";
 
 function Card(props) {
+  console.log(props);
+
   let activityText;
 
   if (props.openSpots === 0) {
     activityText = "SOLD OUT";
-  } else {
-    activityText = "Online";
+  } else if (props.location === "Online") {
+    activityText = "ONLINE";
   }
 
   return (
     <div className="activity__card">
       <img
-        src={`./images/${props.activityImage}`}
+        src={`./images/${props.coverImg}`}
         alt="Katie Zaferes"
         className="activity__img"
       />
-      {props.location === "Online" && (
-        <span className="activity__status">{activityText}</span>
-      )}
+      {activityText && <span className="activity__status">{activityText}</span>}
       <p className="activity__rating">
         <img
           src="./images/star.png"
           alt="star"
           className="activity__rating__star"
         />
-        {props.rating}
+        {props.stats.rating}
         <span className="activity__rating__grey">
-          &nbsp;({props.reviewCount}) &middot; {props.location}
+          &nbsp;({props.stats.reviewCount}) &middot; {props.location}
         </span>
       </p>
       <p className="activity__name">{props.title}</p>

@@ -14,6 +14,8 @@ function App() {
         activityImage={card.coverImg}
         rating={card.stats.rating}
         reviewCount={card.stats.reviewCount}
+        location={card.location}
+        openSpots={card.openSpots}
       />
     );
   });

@@ -1,6 +1,15 @@
 import React from "react";
+import { act } from "react-dom/test-utils";
 
 function Card(props) {
+  let activityText;
+
+  if (props.openSpots === 0) {
+    activityText = "SOLD OUT";
+  } else {
+    activityText = "Online";
+  }
+
   return (
     <div className="activity__card">
       <img
@@ -8,9 +17,9 @@ function Card(props) {
         alt="Katie Zaferes"
         className="activity__img"
       />
-      <span className="activity__status">
-        {props.openSpots === 0 ? "SOLD OUT" : props.location}
-      </span>
+      {props.location === "Online" && (
+        <span className="activity__status">{activityText}</span>
+      )}
       <p className="activity__rating">
         <img
           src="./images/star.png"
